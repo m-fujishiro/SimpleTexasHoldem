@@ -30,11 +30,12 @@ p {
 <div style="width : 20%;">
   <img src="Images/ディーラー.jpg" alt="ディーラー">
 </div>
-<p>ご新規様ですね。当店は会員制となっております。</p>
+<p>ご新規様ですね。当店は会員制となっております。</br>
+呼び名と合言葉をご入力ください。</p>
 <form action="UserSave.php" method="post">
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;お名前<input type="text" name="user" required><br>
-&emsp;&emsp;&emsp;&emsp;パスワード<input type="password" name="pass" required><br>
-パスワード(再入力)<input type="password" name="pass2" required><br>
+<p>&emsp;&emsp;&emsp;&emsp;呼び名<input type="text" name="user" required><br>
+&emsp;&emsp;&emsp;&emsp;合言葉<input type="password" name="pass" required><br>
+合言葉(再入力)<input type="password" name="pass2" required></p>
 <input type="submit" value="ユーザー登録"><input type="reset" value="リセット">
 </body>
 
