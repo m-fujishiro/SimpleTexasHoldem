@@ -3,6 +3,7 @@
 <head>
 <title>Casino</title>
 <meta http-equiv="Content-Style-Type" content="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
 <?php include("CreateDB.php");?>
 <?php include("load.php");?>
 <style type="text/css">
@@ -25,7 +26,10 @@ img {
   width: 100%;
   text-align : center;
 }
-
+p {
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  font-style: italic;
+}
 
 --> 
 </style>
@@ -39,7 +43,7 @@ var start = new Date();
 <div style="width : 20%;">
   <img src="Images/ディーラー.jpg" alt="ディーラー">
 </div>
-<div>いくらベットなさいますか？(Max : <?php echo $coin;?>)</div>
+<div><p>いくらベットなさいますか？(Max : <?php echo $coin;?>)<p></div>
 </body>
 <input type="hidden" name="shuffle_num" value="">
 <input type="hidden" name="user" value="<?php echo $user;?>">
