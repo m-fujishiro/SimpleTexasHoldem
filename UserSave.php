@@ -75,15 +75,19 @@ img {
   width: 100%;
   text-align : center;
 }
+p {
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  font-style: italic;
+}
 </style>
-
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
 <meta http-equiv="refresh" content="5;URL=index.php">
 
 <body>
 <div style="width : 20%;">
   <img src="Images/ディーラー.jpg" alt="ディーラー">
 </div>
-ユーザー登録が完了しました。5秒後に戻ります。
+<p><?php echo $user;?>様ですね、かしこまりました。登録中です。少々お待ちください。</p>
 </body>
 
 
